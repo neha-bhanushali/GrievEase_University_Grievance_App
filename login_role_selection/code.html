@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GrievEase - Login</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Plus_Jakarta_Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline": "#767683",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#f8f9fa",
+                        "surface-dim": "#d9dadb",
+                        "on-secondary-fixed-variant": "#822800",
+                        "on-primary-fixed": "#000d5f",
+                        "inverse-on-surface": "#f0f1f2",
+                        "primary-fixed-dim": "#bbc3ff",
+                        "surface": "#f8f9fa",
+                        "error": "#ba1a1a",
+                        "surface-variant": "#e1e3e4",
+                        "on-error-container": "#93000a",
+                        "inverse-surface": "#2e3132",
+                        "on-tertiary-fixed": "#002105",
+                        "surface-container": "#edeeef",
+                        "inverse-primary": "#bbc3ff",
+                        "on-secondary-container": "#6b1f00",
+                        "on-secondary-fixed": "#380c00",
+                        "tertiary-fixed": "#93f993",
+                        "primary-fixed": "#dfe0ff",
+                        "background": "#f8f9fa",
+                        "secondary-fixed-dim": "#ffb59c",
+                        "on-primary-fixed-variant": "#2d3c9c",
+                        "on-tertiary-fixed-variant": "#005316",
+                        "secondary-container": "#fe7e4f",
+                        "on-primary-container": "#aab4ff",
+                        "tertiary-fixed-dim": "#77dc7a",
+                        "outline-variant": "#c6c5d4",
+                        "on-surface": "#191c1d",
+                        "primary-container": "#303f9f",
+                        "surface-container-high": "#e7e8e9",
+                        "on-primary": "#ffffff",
+                        "tertiary-container": "#005617",
+                        "on-error": "#ffffff",
+                        "secondary": "#a43c12",
+                        "surface-tint": "#4755b6",
+                        "secondary-fixed": "#ffdbcf",
+                        "tertiary": "#003c0d",
+                        "on-surface-variant": "#454652",
+                        "on-secondary": "#ffffff",
+                        "primary": "#142588",
+                        "surface-container-low": "#f3f4f5",
+                        "error-container": "#ffdad6",
+                        "on-background": "#191c1d",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-tertiary-container": "#6ace6e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "3xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Manrope"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(24px);
+            border: 0.5px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-card-active {
+            background: rgba(255, 255, 255, 0.1);
+            border: 0.5px solid rgba(147, 249, 147, 0.3); /* Mint border */
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-mesh {
+            background-color: #142588;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(147, 249, 147, 0.15) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(164, 60, 18, 0.15) 0px, transparent 50%),
+                radial-gradient(at 50% 50%, rgba(20, 37, 136, 1) 0px, transparent 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-mesh min-h-screen flex items-center justify-center font-body selection:bg-tertiary-fixed selection:text-on-tertiary-fixed overflow-x-hidden">
+<!-- Decorative Background Elements -->
+<div class="fixed top-[-10%] right-[-10%] w-[40vw] h-[40vw] bg-tertiary/20 rounded-full blur-[120px] pointer-events-none"></div>
+<div class="fixed bottom-[-10%] left-[-10%] w-[40vw] h-[40vw] bg-secondary/10 rounded-full blur-[120px] pointer-events-none"></div>
+<main class="w-full max-w-6xl px-6 py-12 lg:py-24 grid lg:grid-cols-2 gap-16 items-center z-10">
+<!-- Brand & Info Section -->
+<div class="flex flex-col space-y-8 text-white">
+<div class="flex items-center space-x-3">
+<div class="p-3 glass-panel rounded-2xl">
+<span class="material-symbols-outlined text-4xl text-tertiary-fixed" data-icon="account_balance">account_balance</span>
+</div>
+<h1 class="text-4xl lg:text-5xl font-extrabold tracking-tight font-headline">GrievEase</h1>
+</div>
+<div class="space-y-4">
+<h2 class="text-3xl lg:text-4xl font-bold leading-tight">
+                    Your platform for <span class="text-tertiary-fixed">transparent</span> and <span class="text-secondary-fixed">efficient</span> grievance resolution.
+                </h2>
+<p class="text-on-primary-container/80 text-lg max-w-md font-label">
+                    Empowering students and faculty to voice concerns through a structured, architectural approach to university management.
+                </p>
+</div>
+<div class="grid grid-cols-2 gap-6 pt-4">
+<div class="glass-panel p-6 rounded-3xl space-y-2">
+<span class="text-2xl font-bold font-headline">98%</span>
+<p class="text-xs uppercase tracking-widest text-on-primary-container/60 font-semibold">Resolution Rate</p>
+</div>
+<div class="glass-panel p-6 rounded-3xl space-y-2">
+<span class="text-2xl font-bold font-headline">&lt; 24h</span>
+<p class="text-xs uppercase tracking-widest text-on-primary-container/60 font-semibold">Avg Response</p>
+</div>
+</div>
+</div>
+<!-- Login Form Section -->
+<div class="glass-panel p-8 lg:p-12 rounded-[2.5rem] shadow-2xl relative">
+<!-- Form Header -->
+<div class="mb-10">
+<h3 class="text-2xl font-bold text-white mb-2">Welcome Back</h3>
+<p class="text-on-primary-container/70 font-label">Please select your role and enter credentials.</p>
+</div>
+<!-- Role Selection -->
+<div class="grid grid-cols-3 gap-4 mb-10">
+<!-- Student -->
+<button class="flex flex-col items-center p-4 rounded-2xl glass-card-active transition-all group">
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed/20 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-tertiary-fixed" data-icon="school">school</span>
+</div>
+<span class="text-white text-sm font-semibold font-label">Student</span>
+</button>
+<!-- Faculty -->
+<button class="flex flex-col items-center p-4 rounded-2xl glass-panel transition-all hover:bg-white/10 group">
+<div class="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-white/60" data-icon="badge">badge</span>
+</div>
+<span class="text-white/60 text-sm font-semibold font-label">Faculty</span>
+</button>
+<!-- Admin -->
+<button class="flex flex-col items-center p-4 rounded-2xl glass-panel transition-all hover:bg-white/10 group">
+<div class="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-white/60" data-icon="admin_panel_settings">admin_panel_settings</span>
+</div>
+<span class="text-white/60 text-sm font-semibold font-label">Admin</span>
+</button>
+</div>
+<!-- Credentials -->
+<form class="space-y-6">
+<div class="space-y-2">
+<label class="text-xs font-bold text-on-primary-container/60 uppercase tracking-widest px-1">University ID</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-4 text-white/40" data-icon="alternate_email">alternate_email</span>
+<input class="w-full bg-white/5 border-none rounded-2xl py-4 pl-12 pr-4 text-white placeholder:text-white/20 focus:ring-2 focus:ring-tertiary-fixed/50 transition-all font-label" placeholder="e.g. U-2024-001" type="text"/>
+</div>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between items-center px-1">
+<label class="text-xs font-bold text-on-primary-container/60 uppercase tracking-widest">Password</label>
+<a class="text-xs font-semibold text-tertiary-fixed hover:text-white transition-colors" href="#">Forgot?</a>
+</div>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-4 text-white/40" data-icon="lock">lock</span>
+<input class="w-full bg-white/5 border-none rounded-2xl py-4 pl-12 pr-12 text-white placeholder:text-white/20 focus:ring-2 focus:ring-tertiary-fixed/50 transition-all font-label" placeholder="••••••••" type="password"/>
+<button class="absolute right-4 text-white/40 hover:text-white" type="button">
+<span class="material-symbols-outlined text-sm" data-icon="visibility">visibility</span>
+</button>
+</div>
+</div>
+<!-- Primary Action -->
+<div class="pt-4 space-y-4">
+<button class="w-full bg-gradient-to-br from-secondary to-on-secondary-container text-white py-4 rounded-3xl font-bold text-lg shadow-lg shadow-secondary/20 hover:scale-[1.02] active:scale-[0.98] transition-all" type="submit">
+                        Sign In
+                    </button>
+<div class="flex items-center space-x-4 py-2">
+<div class="h-[1px] flex-1 bg-white/10"></div>
+<span class="text-xs font-bold text-white/30 uppercase tracking-widest">or</span>
+<div class="h-[1px] flex-1 bg-white/10"></div>
+</div>
+<button class="w-full glass-panel border-white/20 text-white py-4 rounded-3xl font-bold flex items-center justify-center space-x-2 hover:bg-white/5 transition-all" type="button">
+<span class="material-symbols-outlined text-xl" data-icon="phonelink_ring">phonelink_ring</span>
+<span>Login with OTP</span>
+</button>
+</div>
+</form>
+<!-- Footer Link -->
+<p class="mt-10 text-center text-on-primary-container/60 text-sm font-label">
+                Don't have an account? <a class="text-tertiary-fixed font-bold hover:underline" href="#">Contact Registry</a>
+</p>
+</div>
+</main>
+<!-- Background Decorative Visuals (Absolute Positioned for Hero feel) -->
+<div class="fixed top-0 left-0 w-full h-full pointer-events-none -z-10 opacity-30">
+<div class="absolute top-[20%] left-[10%] w-64 h-64 rounded-full bg-indigo-500/20 blur-3xl"></div>
+<div class="absolute bottom-[20%] right-[10%] w-96 h-96 rounded-full bg-mint-500/10 blur-3xl"></div>
+</div>
+</body></html>
