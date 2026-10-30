@@ -37,3 +37,6 @@ Currently, this repository contains the UI/UX design and Figma-based screen conc
 ---
 
 **GrievEase – Your platform for transparent and efficient grievance resolution.**
+
+Project Link :
+https://www.figma.com/design/T54YIoggBrhxYiPDGhPVqD/GrievEase?t=yQ0eJ7w1WEDKuRYp-1
